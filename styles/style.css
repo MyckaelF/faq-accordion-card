@@ -65,12 +65,21 @@ html, body {
 .quest {
     padding: 0px 0 10px 0;
     position: relative;
+    cursor: pointer;
+}
+
+.quest span {
+    transition: all 400ms ease;
 }
 
 .quest span::after {
     content: url(../images/icon-arrow-down.svg);
     position: absolute;
     right: 10px;
+}
+
+.quest span:hover {
+    color: var(--softRed);
 }
 
 .quest::after {
@@ -82,11 +91,30 @@ html, body {
 }
 
 .quest p {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
     margin-top: 10px;
+    transition: all 500ms ease;
+}
+
+.quest[show] span {
+    font-weight: bold;
+}
+
+.quest[show] p {
+    max-height: 100px;
+}
+
+.quest[show] span::after {
+    content: url(../images/icon-arrow-down.svg);
+    position: absolute;
+    right: 10px;
+    transform: rotateX(180deg);
+    transition: all 500ms ease;
 }
 
 .attribution,
 .attribution a{
     color: white;
 }
+
