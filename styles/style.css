@@ -70,6 +70,7 @@ html, body {
 
 .quest span {
     transition: all 400ms ease;
+    font-size: 13px;
 }
 
 .quest span::after {
@@ -95,10 +96,12 @@ html, body {
     overflow: hidden;
     margin-top: 10px;
     transition: all 500ms ease;
+    color: var(--darkgravishBlue);
 }
 
 .quest[show] span {
     font-weight: bold;
+    color: var(--verydarkGravishb);
 }
 
 .quest[show] p {
@@ -136,6 +139,7 @@ html, body {
     h1 {
         text-align: center;
         margin-top: 150px;
+        color: var(--verydarkDesnaturedb);
     }
     .boxIllustration {
         display: none;
