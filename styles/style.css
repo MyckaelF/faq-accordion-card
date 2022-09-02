@@ -1,0 +1,92 @@
+@import url(../styles/variables.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(180deg, hsl(273deg 75% 66%) 0%,hsl(270deg 75% 66%) 19%,hsl(267deg 75% 66%) 27%, hsl(264deg 74% 65%) 34%,hsl(261deg 74% 65%) 41%,hsl(258deg 74% 65%) 47%,hsl(255deg 74% 65%) 53%,hsl(252deg 74% 65%) 59%, hsl(249deg 74% 65%) 66%, hsl(246deg 73% 65%) 73%, hsl(243deg 73% 65%) 81%,hsl(240deg 73% 65%) 100%);
+    font-family: 'Kumbh Sans', sans-serif;;
+    font-size: 12px;
+}
+
+html, body {
+    height: 100%;
+}
+
+.containerFaq {
+    display: flex;
+    background-color: white;
+    height: 425px;
+    width: 800px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.imagesFaq {
+    width: 50%;
+}
+
+.imagesFaq picture:first-of-type img {
+    position: absolute;
+    top: -58%;
+    left: -50%;
+    width: 800px;
+}
+
+.imagesFaq picture:last-of-type img {
+    position: absolute;
+    right:53%;
+    width: 450px;
+    margin-top: 40px;
+}
+
+.imagesFaq .boxIllustration{
+    position: fixed;
+    top: 42%;
+    right: 73%;  
+}
+
+.questsFaq {
+    width: 50%;
+    padding: 50px;
+}
+
+.questions {
+    margin-top: 40px;
+}
+
+.quest {
+    padding: 0px 0 10px 0;
+    position: relative;
+}
+
+.quest span::after {
+    content: url(../images/icon-arrow-down.svg);
+    position: absolute;
+    right: 10px;
+}
+
+.quest::after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: var(--lightgravishBlue);
+    display: inline-block;
+}
+
+.quest p {
+    display: none;
+    margin-top: 10px;
+}
+
+.attribution,
+.attribution a{
+    color: white;
+}
